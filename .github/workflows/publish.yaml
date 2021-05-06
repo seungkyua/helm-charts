@@ -22,10 +22,10 @@ jobs:
       - name: Publish Helm chart
         uses: stefanprodan/helm-gh-pages@master
         with:
-          token: ${{ secrets.HANU }}
+          token: ${{ secrets.SEUNGKYUA }}
           charts_dir: .
           charts_url:  https://seungkyua.github.io/helm-repo
           owner: seungkyua
           repository: helm-repo
-          branch: main
+          branch: master
           linting: off
