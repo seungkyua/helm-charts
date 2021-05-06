@@ -22,7 +22,7 @@ jobs:
       - name: Publish Helm chart
         uses: stefanprodan/helm-gh-pages@master
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.BOT_GITHUB_TOKEN }}
           charts_dir: .
           charts_url:  https://seungkyua.github.io/helm-repo
           owner: seungkyua
